@@ -14,13 +14,14 @@ export default function Home() {
      <ThemeSwitcher />
     <Wrapper>
       <Input/>
+       <Wrapper>
+      <RatingCard score={91}/>
+      </Wrapper>
     </Wrapper>
       <Wrapper>
       <ProductCard/>
       </Wrapper>
-        <Wrapper>
-      <RatingCard score={91}/>
-      </Wrapper>
+       
   </Container>
 
   );
