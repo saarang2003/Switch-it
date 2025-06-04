@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import Chart from "./_component/Chart";
 import Container from "./_component/Container";
 import Input from "./_component/Input";
 import ProductCard from "./_component/ProductCard";
@@ -20,6 +21,9 @@ export default function Home() {
     </Wrapper>
       <Wrapper>
       <ProductCard/>
+        <Wrapper>
+      <Chart/>
+      </Wrapper>
       </Wrapper>
        
   </Container>
