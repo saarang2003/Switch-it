@@ -8,7 +8,7 @@ interface WrapperProps {
 
 const Wrapper: React.FC<WrapperProps> = ({ children }) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center m-3">
       {children}
     </div>
   );
