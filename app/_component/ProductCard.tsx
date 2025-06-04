@@ -5,8 +5,9 @@ import React from 'react';
 
 const ProductCard: React.FC = () => {
   return (
-    <div className="group my-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 shadow-md">
-      <a className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+    <div className="group my-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 shadow-md px-2 py-1">
+    <div className='mx-3 my-2'>
+     <a className="relative mx-2 mt-1 flex h-60 overflow-hidden rounded-xl" href="#">
         <Image
           width={300}
           height={240}
@@ -76,6 +77,9 @@ const ProductCard: React.FC = () => {
           Add to cart
         </a>
       </div>
+    </div>
+ 
+   
     </div>
   );
 };
