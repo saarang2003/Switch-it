@@ -1,52 +1,34 @@
-'use client';
+"use client"
+import React, { useState } from "react";
 
-import React from 'react';
-import {
-  BarChart,
-  Bar,
-  ResponsiveContainer,
-  XAxis,
-  Tooltip,
-} from 'recharts';
-
-// Demo data
-const data = [
-  { name: 'Mon', value: 4 },
-  { name: 'Tue', value: 6 },
-  { name: 'Wed', value: 5 },
-  { name: 'Thu', value: 4 },
-  { name: 'Fri', value: 7 },
-  { name: 'Sat', value: 8 },
-  { name: 'Sun', value: 6 },
-  { name: 'Mon', value: 9 },
-  { name: 'Tue', value: 10 },
-  { name: 'Wed', value: 12 },
-  { name: 'Thu', value: 13 },
+const tabs = [
+  { label: "Tab 1", content: "Tab content 1" },
+  { label: "Tab 2", content: "Tab content 2" },
+  { label: "Tab 3", content: "Tab content 3" },
 ];
 
 const Tabs: React.FC = () => {
-  return (
-    <div className="bg-base-100 rounded-xl shadow p-6 min-w-[340px] max-w-md mx-auto">
-      <ResponsiveContainer width="100%" height={120}>
-        <BarChart data={data} barCategoryGap={2}>
-          <Bar dataKey="value" fill="var(--color-primary Juliet
+  const [active, setActive] = useState(1);
 
-System: --primary)" radius={[8, 8, 0, 0]} />
-          <XAxis dataKey="name" hide />
-          <Tooltip cursor={{ fill: "transparent" }} content={undefined} />
-        </BarChart>
-      </ResponsiveContainer>
-      <div className="mt-6 text-base-content text-center text-lg font-normal">
-        Sales volume reached <span className="font-semibold">$12,450</span> this week, showing<br />
-        a <span className="font-semibold text-success">15% increase</span> from the previous period.
+  return (
+    <div className="w-full max-w-md mx-auto">
+      <div className="flex space-x-0.5 ">
+        {tabs.map((tab, idx) => (
+          <button
+            key={tab.label}
+            className={`px-6 py-2 rounded-t-lg border border-b-0 border-base-300 text-base-content cursor-pointer font-medium transition
+              ${active === idx
+                ? "bg-base-100"
+                : "bg-base-200 hover:bg-base-100/70"
+              }`}
+            onClick={() => setActive(idx)}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
-      <div className="flex gap-4 mt-6 justify-center">
-        <button className="flex-1 py-3 rounded-lg border border-base-300 bg-base-100 text-base-content font-semibold text-lg shadow-sm hover:bg-base-200 transition">
-          Charts
-        </button>
-        <button className="flex-1 py-3 rounded-lg bg-primary text-primary-content font-semibold text-lg shadow hover:shadow-md transition">
-          Details
-        </button>
+      <div className="rounded-b-lg border border-base-300 bg-base-100 p-6 text-base-content">
+        {tabs[active].content}
       </div>
     </div>
   );
