@@ -11,6 +11,7 @@ const Tabs: React.FC = () => {
   const [active, setActive] = useState(1);
 
   return (
+    <div className="w-full max-w-sm min-w-[200px] border-2 border-red-500 px-2 py-1 rounded bg-base-200">
     <div className="w-full max-w-md mx-auto">
       <div className="flex space-x-0.5 ">
         {tabs.map((tab, idx) => (
@@ -30,6 +31,7 @@ const Tabs: React.FC = () => {
       <div className="rounded-b-lg border border-base-300 bg-base-100 p-6 text-base-content">
         {tabs[active].content}
       </div>
+    </div>
     </div>
   );
 };
