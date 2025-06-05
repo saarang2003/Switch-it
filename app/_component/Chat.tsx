@@ -17,7 +17,7 @@ const messages: Message[] = [
     text: "It's over for you",
     time: "12:45",
     sender: "them",
-    name: "Obi-Wan Kenobi",
+    name: "Liza",
     avatar: "/asset/girl.png",
   },
   {

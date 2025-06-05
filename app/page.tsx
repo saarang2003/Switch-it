@@ -3,6 +3,7 @@ import Chart from "./_component/Chart";
 import Chat from "./_component/Chat";
 import Container from "./_component/Container";
 import Input from "./_component/Input";
+import Order from "./_component/Order";
 import ProductCard from "./_component/ProductCard";
 import RatingCard from "./_component/RatingCard";
 import Tabs from "./_component/Tabs";
@@ -38,6 +39,10 @@ export default function Home() {
       </Wrapper>
        <Wrapper>
       <Tabs/>
+      </Wrapper>
+
+             <Wrapper>
+      <Order/>
       </Wrapper>
 
        
