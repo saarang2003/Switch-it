@@ -17,8 +17,8 @@ const orders: Order[] = [
 ];
 
 const statusStyles: Record<OrderStatus, string> = {
-  Send: "bg-cyan-400 text-white",
-  Failed: "bg-rose-300 text-white",
+  Send: "bg-sky-400 text-white",
+  Failed: "bg-pink-600 text-white",
   "In progress": "bg-amber-400 text-white",
   Completed: "bg-emerald-400 text-white",
 };
