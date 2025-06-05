@@ -19,7 +19,7 @@ const RatingCard: React.FC<RatingCardProps> = ({
   const progress = (percentage / 100) * circleCircumference;
 
   return (
-    <div className="w-full max-w-sm min-w-[200px] border-2 border-red-500 px-2 py-1 rounded bg-base-200">
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-2 rounded-xl shadow-xl bg-base-200">
     <div className="flex items-center justify-between bg-base-100 rounded-lg shadow p-6 min-w-[320px]">
       <div>
         <div className="text-base-content text-sm mb-2">Page Score</div>

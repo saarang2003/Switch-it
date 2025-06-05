@@ -8,6 +8,7 @@ const Price: React.FC = () => {
   const [value, setValue] = useState(50);
 
   return (
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-2 rounded-xl shadow-xl bg-base-200">
     <div className="bg-base-100 rounded-xl shadow  p-6 min-w-80 w-full ">
       <div className="flex items-center gap-2 mb-4">
         <svg width={22} height={22} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -50,6 +51,7 @@ const Price: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

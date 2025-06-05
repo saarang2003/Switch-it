@@ -5,7 +5,7 @@ import React from 'react';
 
 const ProductCard: React.FC = () => {
   return (
-    <div className="w-full max-w-sm min-w-[200px] border-2 border-red-500 px-2 py-1 rounded bg-base-200" >
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-1 rounded-xl shadow-xl bg-base-200" >
     <div className="group my-3 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-base-300 bg-base-100 shadow-md px-2 py-1">
     <div className='mx-3 my-2'>
      <a className="relative mx-2 mt-1 flex h-60 overflow-hidden rounded-xl" href="#">

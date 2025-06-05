@@ -2,6 +2,7 @@ import React from "react";
 
 const Message: React.FC = () => {
   return (
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-3 rounded-xl shadow-xl bg-base-200">
     <div className="space-y-4 max-w-xs w-full mx-auto">
       {/* New messages */}
       <div className="flex items-center gap-3 bg-info text-info-content rounded-xl px-4 py-3 shadow">
@@ -48,6 +49,7 @@ const Message: React.FC = () => {
           Support
         </a>
       </div>
+    </div>
     </div>
   );
 };

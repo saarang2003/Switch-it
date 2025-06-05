@@ -26,6 +26,7 @@ const data = [
 
 const Chart: React.FC = () => {
   return (
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-2 rounded-xl shadow-xl bg-base-200">
     <div className="bg-base-100 rounded-xl shadow p-6 min-w-[340px] max-w-md mx-auto">
       <ResponsiveContainer width="100%" height={120}>
         <BarChart data={data} barCategoryGap={2}>
@@ -48,6 +49,7 @@ System: --primary)" radius={[8, 8, 0, 0]} />
           Details
         </button>
       </div>
+    </div>
     </div>
   );
 };

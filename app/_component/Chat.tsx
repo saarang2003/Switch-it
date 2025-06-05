@@ -40,6 +40,7 @@ const messages: Message[] = [
 
 const Chat: React.FC = () => {
   return (
+    <div className="w-full max-w-sm min-w-[200px]  px-2 py-2  rounded-xl shadow-xl bg-base-200">
     <div className="bg-base-100 rounded-xl shadow p-4 max-w-md mx-auto flex flex-col min-h-[400px]">
       <div className="flex-1 space-y-4 pb-4">
         {messages.map((msg, idx) => {
@@ -115,6 +116,7 @@ const Chat: React.FC = () => {
           </svg>
         </button>
       </div>
+    </div>
     </div>
   );
 };

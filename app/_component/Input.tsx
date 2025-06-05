@@ -4,7 +4,7 @@ import Wrapper from './Wrapper'
 function Input() {
   return (
     <Wrapper>
-      <div className="w-full max-w-sm min-w-[200px] border-2 border-red-500 px-2 py-1 rounded bg-base-200">
+      <div className="w-full max-w-sm min-w-[200px]  px-2 py-1 rounded-xl shadow-xl bg-base-200">
         <div className="mx-3 my-2">
           <div className="relative">
             <input
