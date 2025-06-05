@@ -4,6 +4,7 @@ import Chat from "./_component/Chat";
 import Container from "./_component/Container";
 import Input from "./_component/Input";
 import Order from "./_component/Order";
+import Price from "./_component/Price";
 import ProductCard from "./_component/ProductCard";
 import RatingCard from "./_component/RatingCard";
 import Tabs from "./_component/Tabs";
@@ -43,7 +44,11 @@ export default function Home() {
 
              <Wrapper>
       <Order/>
+             <Wrapper>
+      <Price/>
       </Wrapper>
+      </Wrapper>
+
 
        
   </Container>
