@@ -43,7 +43,7 @@ const ProductCard: React.FC = () => {
             d="M2 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10a4 4 0 0 1-2.328 3.635a2.996 2.996 0 0 0-.55-.756l-8-8A3 3 0 0 0 14 17v7H6a4 4 0 0 1-4-4V10Zm14 19a1 1 0 0 0 1.8.6l2.7-3.6H25a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 16 17v12Z"
           />
         </svg>
-        <span className="absolute top-0 left-0 m-2 rounded-full bg-neutral px-2 text-center text-sm font-medium text-neutral-content">
+        <span className="absolute top-0 left-0 m-2 rounded-full bg-neutral px-2 text-center text-sm font-medium text-white">
           39% OFF
         </span>
       </a>

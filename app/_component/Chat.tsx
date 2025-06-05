@@ -63,7 +63,7 @@ const Chat: React.FC = () => {
                   </div>
                 )}
                 <div
-                  className={`rounded-xl px-4 py-3 text-base-content bg-base-content text-primary-content text-base font-normal
+                  className={`rounded-xl px-4 py-3 text-primary-content bg-base-content  font-normal
                     ${isMe
                       ? "rounded-br-none bg-base-content text-primary-content"
                       : "rounded-bl-none bg-base-content text-primary-content"

@@ -13,7 +13,7 @@ function Input() {
               placeholder="Email Address"
             />
             <button
-              className="absolute right-1 top-1 rounded bg-base-content py-1 px-2.5 border border-transparent text-center text-sm text-primary-content transition-all shadow-sm hover:shadow focus:bg-primary focus:shadow-none active:bg-primary hover:bg-primary active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="absolute right-1 top-1 rounded bg-base-content py-1 px-2.5 border border-transparent text-center text-sm text-neutral-content transition-all shadow-sm hover:shadow focus:bg-primary focus:shadow-none active:bg-primary hover:bg-primary active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
             >
               Invite
