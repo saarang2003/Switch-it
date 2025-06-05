@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import Chart from "./_component/Chart";
 import Chat from "./_component/Chat";
@@ -10,29 +11,42 @@ import ProductCard from "./_component/ProductCard";
 import RatingCard from "./_component/RatingCard";
 import ResizableSidebar from "./_component/Sidebar";
 import Tabs from "./_component/Tabs";
-import ThemeSwitcher from "./_component/ThemeSwitcher";
+import { useTheme } from "./_component/ThemeContext";
 import Wrapper from "./_component/Wrapper";
 
 export default function Home() {
+
+    const { theme, setTheme } = useTheme();
+
+
   return (
-    <div className="flex">
+    <div className="flex ">
        <ResizableSidebar>
         <h1 className="text-center py-12 text-4xl font-extrabold">Switch-it</h1>
         <div className="flex flex-col min-w-[80%] items-center justify-center space-y-4">
-          <button className="min-w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">One</button>
-          <button className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Two</button>
-          <button className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Three</button>
-          <button className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Four</button>
+          <button onClick={(e) =>(setTheme('winter'))} className="min-w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Winter Theme</button>
+          <button onClick={(e) =>(setTheme('synthwave'))}   className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Synthwave Theme</button>
+          <button onClick={(e) =>(setTheme('light'))} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Light Mode</button>
+          <button onClick={(e) => setTheme('dark')} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Dark Mode</button>
+          <button onClick={(e) => setTheme('cyberpunk')} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Cyberpunk </button>
         </div>
       </ResizableSidebar>
     
-    <Container>
-      <ThemeSwitcher />
+    <div className="w-full">
+    <Container >
+
+
       <Wrapper>
         <Input />
+
         <Wrapper>
           <RatingCard score={91} />
         </Wrapper>
+
+         <Wrapper>
+        <Tabs />
+      </Wrapper>
+
       </Wrapper>
 
       <Wrapper>
@@ -46,9 +60,6 @@ export default function Home() {
           <Chart />
         </Wrapper>
       </Wrapper>
-      <Wrapper>
-        <Tabs />
-      </Wrapper>
 
       <Wrapper>
         <Order />
@@ -60,6 +71,7 @@ export default function Home() {
         </Wrapper>
       </Wrapper>
     </Container>
+    </div>
     </div>
   );
 }
