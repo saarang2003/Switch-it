@@ -39,7 +39,7 @@ const ResizableSidebar: React.FC<{ children: React.ReactNode }> = ({ children })
   return (
     <div
       ref={sidebarRef}
-      className="relative h-auto bg-accent text-white flex flex-col justify-start items-center"
+      className="relative h-auto bg-[#26a69a] text-white flex flex-col justify-start items-center"
       style={{ width: `${widthPercent}%`, minWidth: `${MIN_WIDTH_PERCENT}%`, maxWidth: `${MAX_WIDTH_PERCENT}%`, transition: isResizing ? "none" : "width 0.2s" }}
     >
       {children}

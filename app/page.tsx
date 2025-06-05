@@ -22,13 +22,13 @@ export default function Home() {
   return (
     <div className="flex ">
        <ResizableSidebar>
-        <h1 className="text-center py-12 text-4xl font-extrabold">Switch-it</h1>
+        <h1 className="text-center py-12 text-4xl font-extrabold font-mono">Switch-it</h1>
         <div className="flex flex-col min-w-[80%] items-center justify-center space-y-4">
-          <button onClick={(e) =>(setTheme('winter'))} className="min-w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Winter Theme</button>
-          <button onClick={(e) =>(setTheme('synthwave'))}   className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Synthwave Theme</button>
-          <button onClick={(e) =>(setTheme('light'))} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Light Mode</button>
-          <button onClick={(e) => setTheme('dark')} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Dark Mode</button>
-          <button onClick={(e) => setTheme('cyberpunk')} className="w-[80%] px-4 py-2 border rounded-2xl shadow-md hover:shadow-2xl hover:bg-amber-900 cursor-pointer border-gray-300">Cyberpunk </button>
+          <button onClick={(e) =>(setTheme('winter'))} className="min-w-[80%] px-4 py-2 border bg-white rounded-2xl shadow-md hover:shadow-2xl hover:bg-gray-200  cursor-pointer font-bold text-black border-gray-300">Winter Theme</button>
+          <button onClick={(e) =>(setTheme('synthwave'))}   className="w-[80%] px-4 py-2 border bg-white rounded-2xl shadow-md hover:shadow-2xl hover:bg-gray-200 cursor-pointer font-bold text-black border-gray-300">Synthwave Theme</button>
+          <button onClick={(e) =>(setTheme('light'))} className="w-[80%] px-4 py-2 border  bg-white rounded-2xl shadow-md hover:shadow-2xl hover:bg-gray-200 cursor-pointer font-bold text-black border-gray-300">Light Mode</button>
+          <button onClick={(e) => setTheme('dark')} className="w-[80%] px-4 py-2 border bg-white rounded-2xl shadow-md hover:shadow-2xl hover:bg-gray-200 cursor-pointer font-bold text-black border-gray-300">Dark Mode</button>
+          <button onClick={(e) => setTheme('cyberpunk')} className="w-[80%] px-4 py-2 border bg-white rounded-2xl shadow-md hover:shadow-2xl hover:bg-gray-200 cursor-pointer font-bold text-black border-gray-300">Cyberpunk </button>
         </div>
       </ResizableSidebar>
     

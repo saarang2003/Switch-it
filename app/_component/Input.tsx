@@ -9,7 +9,7 @@ function Input() {
           <div className="relative">
             <input
               type="email"
-              className="w-full bg-transparent placeholder:text-neutral-content text-base-content text-sm border border-base-300 rounded-md pl-3 pr-16 py-2 transition duration-300 ease focus:outline-none focus:border-base-400 hover:border-base-300 shadow-sm focus:shadow"
+              className="w-full bg-transparent placeholder:text-neutral-content text-base-content text-sm border border-base-content rounded-md pl-3 pr-16 py-2 transition duration-300 ease focus:outline-none focus:border-base-400 hover:border-base-300 shadow-sm focus:shadow"
               placeholder="Email Address"
             />
             <button

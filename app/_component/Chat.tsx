@@ -96,20 +96,20 @@ const Chat: React.FC = () => {
       </div>
       <div className="flex items-center justify-between border-t border-base-200 pt-3 mt-auto">
         <button className="p-2">
-          <svg width={28} height={28} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg width={28} height={28} fill="none" stroke="currentColor" className="text-base-content" strokeWidth={2}  viewBox="0 0 24 24">
             <path d="M22 16.92V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2.08a6 6 0 0 1 3.33-5.37l3.34-1.67a2 2 0 0 0 2.66 0l3.34 1.67A6 6 0 0 1 22 16.92Z" />
             <circle cx={12} cy={7} r={4} />
           </svg>
         </button>
         <button className="p-2">
-          <svg width={28} height={28} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg width={28} height={28} fill="none" stroke="currentColor"  className="text-base-content" strokeWidth={2} viewBox="0 0 24 24">
             <circle cx={12} cy={12} r={10} />
             <path d="M12 16v.01" />
             <path d="M12 8v4" />
           </svg>
         </button>
         <button className="p-2">
-          <svg width={28} height={28} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+          <svg width={28} height={28} fill="none" stroke="currentColor" className="text-base-content" strokeWidth={2} viewBox="0 0 24 24">
             <circle cx={12} cy={12} r={10} />
             <path d="M12 16v.01" />
             <path d="M12 8v4" />

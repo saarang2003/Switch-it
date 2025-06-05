@@ -28,7 +28,7 @@ const Order: React.FC = () => {
     <div className="w-full max-w-sm min-w-[200px]  px-2 py-2 rounded-xl shadow-xl bg-base-200">
     <div className="bg-base-100 rounded-xl shadow p-6 max-w-md w-full mx-auto">
       <div className="flex items-center mb-4 gap-2">
-        <svg width={22} height={22} fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+        <svg width={22} height={22} fill="none" stroke="currentColor" className="text-base-content" strokeWidth={2} viewBox="0 0 24 24">
           <path d="M3 17a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4" />
           <circle cx={12} cy={7} r={4} />
         </svg>
